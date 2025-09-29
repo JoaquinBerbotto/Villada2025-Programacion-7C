@@ -25,13 +25,6 @@ inner join city ci using(city_id)
 inner join country co using(country_id)
 where co.country in ('canada','mexico','brazil');
 
-select c.first_name, c.last_name, c.email, co.country 
-from customer c
-inner join address a using(address_id)
-inner join city ci using(city_id)
-inner join country co using(country_id)
-where co.country in ('canada','mexico','brazil');
-
 show profiles;
 
 -- sin indice la consulta tarda aprox 0.0034 segs
