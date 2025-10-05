@@ -81,7 +81,6 @@ delimiter ;
 call clientes_por_pais2('Brazil', @lista);
 select @lista;
 
-
 #3a
 delimiter $$
 create function is_inventory_available(
